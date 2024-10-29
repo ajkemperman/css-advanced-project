@@ -1,3 +1,4 @@
+
 /* CSS Custom Properties for colors and sizes */
 :root {
   --main-bg-color:hsla(359, 3%, 97%, 0.99);
@@ -10,7 +11,7 @@
   --header-bg-color: hsla(62, 91%, 43%, 0.61);
   --hover-color: hsla(67, 98%, 56%, 0.98);
   --intro-bg-color: hsla(209, 51%, 92%, 0.61);
-  --font-fam: Helvetica, sans-serif;
+  --font-fam: Helvetica, Arial, sans-serif;
   --box-shadow: hsla(0, 1%, 47%, 0.92);
   --hover-link: hsla(0, 0%, 52%, 0.9);
   --footer-font-size: 0.75rem;
@@ -34,6 +35,7 @@ body {
   line-height: 1.5;
 }
 
+/* Header */
 .header {
   background-color: var(--header-bg-color);
   padding: 1rem;
@@ -43,7 +45,7 @@ body {
 }
 
 .navbar a.icon {
-  display:inline;  
+  display: inline;  
 }
 
 .navbar a.icon img {
@@ -88,7 +90,7 @@ body {
 }
 
 .intro h1, .intro > p {
-  padding:1em;  
+  padding: 1em;  
 }
 
 /* CSS Grid for layout */
@@ -112,8 +114,8 @@ body {
 }
 
 .painting > p {
-  padding:0.25em;
-  margin:0.25em;
+  padding: 0.25em;
+  margin: 0.25em;
 }
 
 .painting:hover {
@@ -148,10 +150,11 @@ body {
   color: var(--hover-link);
 }
 
+/* footer */
 .footer div {
-  text-align:center;
-  margin:2rem;
-  padding:2rem;
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
   font-size: var(--footer-font-size);
 }
 
@@ -164,7 +167,7 @@ body {
 
   .paintings {
     grid-template-columns: repeat(2, 1fr);
-    gap:1.5rem;
+    gap: 1.5rem;
     
   }
 
@@ -173,21 +176,22 @@ body {
   }
 
   .navbar a.icon {
-    display:none;
+    display: none;
   }
 
   .nav-list {
-    display:flex;
+    display: flex;
   }
 
   .footer div {
     font-size: var(--footer-font-size-larger);
   }
 }
+
 @media (min-width: 900px) {
   .paintings {
     grid-template-columns: repeat(3, 1fr);
-    gap:2rem;
+    gap: 2rem;
   }
 }
 
